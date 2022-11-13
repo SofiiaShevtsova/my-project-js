@@ -1,0 +1,32 @@
+body {
+  background-color: green;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 200, 200, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.visible {
+  visibility: visible;
+  pointer-events: all;
+}
+
+.form {
+  background-color: aqua;
+  padding: 20px;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
