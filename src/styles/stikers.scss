@@ -4,6 +4,8 @@ body {
   font-family: $font-family-primery;
   font-size: 18px;
 }
+
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -16,16 +18,9 @@ body {
   justify-content: center;
   align-items: center;
 
-  visibility: hidden;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.backdrop.visible {
   visibility: visible;
-  pointer-events: all;
-  overflow: visible;
-}
+    overflow: visible;
+  }
 
 .box-form {
   background-color: aqua;
@@ -81,4 +76,41 @@ box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
 
 .stikers:hover {
   transform: scale(1.5);
+}
+
+.stikers.open {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  z-index: 5;
+  transform: scale(2);
+}
+
+.stikers.yes {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+}
+
+.exit {
+  display: inline-block;
+  padding: 10px;
+    opacity: 1;
+      overflow: visible;
+}
+
+.made {
+    display: inline-block;
+      padding: 10px;
+        opacity: 1;
+          overflow: visible;
+}
+
+
+
+
+.visually-hidden {
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
 }
