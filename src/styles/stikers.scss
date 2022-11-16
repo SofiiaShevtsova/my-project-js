@@ -5,7 +5,6 @@ body {
   font-size: 18px;
 }
 
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -19,8 +18,8 @@ body {
   align-items: center;
 
   visibility: visible;
-    overflow: visible;
-  }
+  overflow: visible;
+}
 
 .box-form {
   background-color: aqua;
@@ -32,12 +31,12 @@ body {
   align-items: center;
 }
 
-.stikers-wall{
+.stikers-wall {
   border-top: 2px green solid;
-        padding: 50px;
+  padding: 50px;
 }
 
-.box-notice{
+.box-notice {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -45,19 +44,19 @@ body {
   gap: 20px;
 }
 
-.stikers:nth-child(3n){
-transform: rotate(0.03turn);
+.stikers:nth-child(3n) {
+  transform: rotate(0.03turn);
   background-color: aqua;
 }
 
 .stikers:nth-child(2n) {
   transform: rotate(-0.02turn);
-    background-color: red;
+  background-color: red;
 }
 
 .stikers:nth-child(4n) {
   transform: rotate(-0.04turn);
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
 
 .stikers:nth-child(5n) {
@@ -65,13 +64,13 @@ transform: rotate(0.03turn);
   background-color: lawngreen;
 }
 
-.stikers{
+.stikers {
   transform: rotate(0.01turn);
   background-color: hotpink;
   width: 200px;
   height: 200px;
   padding: 10px;
-box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
 }
 
 .stikers:hover {
@@ -95,19 +94,16 @@ box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
 .exit {
   display: inline-block;
   padding: 10px;
-    opacity: 1;
-      overflow: visible;
+  opacity: 1;
+  overflow: visible;
 }
 
 .made {
-    display: inline-block;
-      padding: 10px;
-        opacity: 1;
-          overflow: visible;
+  display: inline-block;
+  padding: 10px;
+  opacity: 1;
+  overflow: visible;
 }
-
-
-
 
 .visually-hidden {
   opacity: 0;

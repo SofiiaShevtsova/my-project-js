@@ -6,7 +6,7 @@ import { Notice, boxForNotice, LIST_NOTICE } from "./notice";
 const btnGreate = document.querySelector(".js-greate");
 const btnClean = document.querySelector(".js-clean");
 const backdrop = document.querySelector(".backdrop");
-const formForNotice = document.querySelector(".form")
+const formForNotice = document.querySelector(".form");
 
 boxForNotice.innerHTML = localStorage.getItem(LIST_NOTICE);
 
