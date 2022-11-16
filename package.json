@@ -22,6 +22,7 @@
     "parcel": "^2.8.0"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.5"
   }
 }
