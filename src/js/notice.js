@@ -33,6 +33,6 @@ export const Notice = {
       })
       .join("");
     boxForNotice.innerHTML = newCodeNotice;
-    localStorage.setItem(LIST_NOTICE, `${boxForNotice.innerHTML}`);
+    localStorage.setItem(LIST_NOTICE, JSON.stringify(this.elements));
   },
 };

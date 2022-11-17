@@ -1,4 +1,5 @@
 import "../../node_modules/modern-normalize";
+import "../styles/style.scss";
 import "../styles/stikers.scss";
 import { Notify } from "notiflix";
 import { Notice, boxForNotice, LIST_NOTICE } from "./notice";
@@ -8,7 +9,15 @@ const btnClean = document.querySelector(".js-clean");
 const backdrop = document.querySelector(".backdrop");
 const formForNotice = document.querySelector(".form");
 
-boxForNotice.innerHTML = localStorage.getItem(LIST_NOTICE);
+function checkLocalStorage() {
+  if (JSON.parse(localStorage.getItem(LIST_NOTICE))) {
+    Notice.elements.push(...JSON.parse(localStorage.getItem(LIST_NOTICE))) 
+    Notice.greateNotice(Notice.elements)
+    return
+  }
+}
+checkLocalStorage()
+
 
 function onBtnGreateClick(event) {
   backdrop.classList.remove("visually-hidden");

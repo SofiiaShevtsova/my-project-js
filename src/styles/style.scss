@@ -1,3 +1,73 @@
+$font-family-primery: "Pacifico", sans-serif;
+
 body {
-  background-color: red;
+  background-color: rgba(20, 255, 20, 0.7);
+  font-family: $font-family-primery;
+  font-size: 18px;
+}
+// ------------------header----------------------------------------------
+header {
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav__link {
+  color: black;
+  transition: transform 500ms linear, color 500ms linear;
+}
+
+.nav__link:hover {
+  transform: scale(1.5);
+  color: rgb(1, 65, 17);
+}
+
+.logo {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Cambria, serif;
+  transition: transform 500ms linear, color 500ms linear;
+}
+
+.logo:hover {
+  transform: scale(1.5);
+  color: rgb(1, 65, 17);
+}
+
+section {
+  padding: 50px;
+  border-top: 2px green solid;
+}
+footer {
+  padding: 50px;
+}
+
+li {
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: $font-family-primery;
+  font-size: 18px;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
 }
