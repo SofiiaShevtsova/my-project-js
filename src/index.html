@@ -12,34 +12,55 @@
   </head>
   <body>
     <header>
-      <a href="./index.html" class="logo"
-        >SOVA
-        <!-- <img src="./images/" alt="logo" /> -->
-      </a>
+      <a href="./index.html" class="logo">SOVA </a>
       <nav>
         <ul class="nav">
           <li>
-            <a class="nav__link">Покупки</a>
+            <a href="./list_buy.html" class="nav__link">Покупки</a>
           </li>
           <li>
             <a href="./stikers.html" class="nav__link">Замітки</a>
           </li>
-          <li><a class="nav__link"></a></li>
+          <li><a href="./phrase.html" class="nav__link">Фраза</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section><h1>Мій холодильник</h1></section>
-      <section>
-        <h2>Список покупок</h2>
-        <!-- <a href="./stikers.html">this</a> -->
+      <section class="hero--section">
+        <div class="hero">
+          <h1 class="hero--text">Мій холодильник</h1>
+          <p class="hero--title">"В холодильнику не тільки їжа!)))"</p>
+        </div>
       </section>
       <section>
-        <h2>Наліпки замітки</h2>
-        <a href="./stikers.html">фффффффффффффф</a>
+        <ul class="wall">
+          <li class="wall--item">
+            <h2 class="wall--title">Список покупок</h2>
+            <a href="./list_buy.html"
+              ><img src="../src/images/svitok.png" alt="svitok" width="350px"
+            /></a>
+          </li>
+          <li class="wall--item">
+            <h2 class="wall--title">Наліпки замітки</h2>
+            <a href="./stikers.html"
+              ><img
+                src="../src/images/pngegg-min.png"
+                alt="svitok"
+                width="500px"
+            /></a>
+          </li>
+          <li class="wall--item">
+            <h2 class="wall--title">Знамениті вислови</h2>
+            <a href="./phrase.html"
+              ><img
+                src="../src/images/svitok-hor.png"
+                alt="svitok"
+                width="400px"
+            /></a>
+          </li>
+        </ul>
       </section>
-      <section></section>
     </main>
     <footer></footer>
     <script src="./js/index.js" type="module"></script>

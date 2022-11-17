@@ -1,0 +1,36 @@
+.hero {
+  &--title {
+    font-size: 32px;
+  }
+  &--text {
+    font-size: 18px;
+    text-align: start;
+  }
+}
+
+.wall {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.wall--item {
+  width: calc(100% / 2 - 30px);
+  position: relative;
+  transition: transform 500ms linear;
+}
+
+.wall--item:hover {
+  transform: scale(1.25);
+}
+
+.wall--item img {
+  margin: 0 auto;
+}
+
+.wall--title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+}

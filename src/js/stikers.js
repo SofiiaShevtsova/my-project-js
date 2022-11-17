@@ -2,24 +2,39 @@ import "../../node_modules/modern-normalize";
 import "../styles/style.scss";
 import "../styles/stikers.scss";
 import { Notify } from "notiflix";
-import { Notice, boxForNotice, LIST_NOTICE } from "./notice";
+import { Notes, boxForNotes, LIST_NOTES } from "./notice";
+// const axios = require("axios").default;
 
-const btnGreate = document.querySelector(".js-greate");
+const btnCreate = document.querySelector(".js-create");
 const btnClean = document.querySelector(".js-clean");
 const backdrop = document.querySelector(".backdrop");
-const formForNotice = document.querySelector(".form");
+const formForNotes = document.querySelector(".form");
 
 function checkLocalStorage() {
-  if (JSON.parse(localStorage.getItem(LIST_NOTICE))) {
-    Notice.elements.push(...JSON.parse(localStorage.getItem(LIST_NOTICE))) 
-    Notice.greateNotice(Notice.elements)
-    return
+  if (JSON.parse(localStorage.getItem(LIST_NOTES))) {
+    Notes.elements.push(...JSON.parse(localStorage.getItem(LIST_NOTES)));
+    Notes.createNotes(Notes.elements);
+    return;
   }
 }
-checkLocalStorage()
+checkLocalStorage();
 
+// const options =
+//   "key=31187211-d453cf6c0705ee9af6400cbd4&min_width=1200&q=moon&image_type=photo&orientation=horizontal&safesearch=true&per_page=3&";
+// const baseUrl = "https://pixabay.com/api/";
 
-function onBtnGreateClick(event) {
+// getImage();
+// async function getImage() {
+//   const page = Math.floor(Math.random() * 20);
+
+//   try {
+//     const response = await axios.get(`${baseUrl}?${options}` + `page=${page}`);
+//     console.log(response.data.hits[1].largeImageURL);
+//     boxForNotes.parentNode.style.backgroundImage = `url(${response.data.hits[1].largeImageURL})`;
+//   } catch (error) {}
+// }
+
+function onBtnCreateClick(event) {
   backdrop.classList.remove("visually-hidden");
   document.addEventListener("keydown", closeByKeyBackdrop);
   backdrop.addEventListener("click", onBackdropClick);
@@ -41,7 +56,7 @@ function onBackdropClick(event) {
 
 function onFormForNoticeSubmit(event) {
   event.preventDefault();
-  let notice = formForNotice.querySelector("textarea").value;
+  let notice = formForNotes.querySelector("textarea").value;
   if (notice.trim() === "") {
     Notify.failure("Некоректне значення!!!", {
       width: "500px",
@@ -51,15 +66,15 @@ function onFormForNoticeSubmit(event) {
     return;
   }
 
-  Notice.addNotice(notice);
+  Notes.addNotes(notice);
 
-  formForNotice.reset();
+  formForNotes.reset();
   backdrop.classList.add("visually-hidden");
   document.removeEventListener("keydown", closeByKeyBackdrop);
 }
 
 function onBtnCleanClick(event) {
-  Notice.cleanNotice();
+  Notes.cleanNotes();
 }
 
 function onBoxForNoticeClick(event) {
@@ -80,16 +95,16 @@ function onBoxForNoticeClick(event) {
     });
 
     btnMade.addEventListener("click", (event) => {
-      let noticeForRemove = btnMade.parentNode.querySelector("p").textContent;
-      Notice.removeNotice(noticeForRemove);
+      let notesForRemove = btnMade.parentNode.querySelector("p").textContent;
+      Notes.removeNotes(notesForRemove);
     });
   }
 }
 
-btnGreate.addEventListener("click", onBtnGreateClick);
+btnCreate.addEventListener("click", onBtnCreateClick);
 
-formForNotice.addEventListener("submit", onFormForNoticeSubmit);
+formForNotes.addEventListener("submit", onFormForNoticeSubmit);
 
 btnClean.addEventListener("click", onBtnCleanClick);
 
-boxForNotice.addEventListener("click", onBoxForNoticeClick);
+boxForNotes.addEventListener("click", onBoxForNoticeClick);

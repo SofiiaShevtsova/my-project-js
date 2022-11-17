@@ -1,3 +1,8 @@
+$font-family-primery: "Pacifico", sans-serif;
+$btn-text-color: rgb(25, 68, 11);
+$text-color: rgb(25, 68, 11);
+$bgr-color: rgba(20, 255, 20, 0.7);
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -15,13 +20,45 @@
 }
 
 .box-form {
-  background-color: aqua;
-  padding: 20px;
-  width: 50%;
-  height: 50%;
+  background-color:rgba(200, 200, 200, 0.5);
+  padding: 50px;
+}
+
+.form {
+    margin: auto;
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+}
+
+.notise{
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+      font-size: 22px;
+        font-weight: 400;
+
+        background-color: beige;
+}
+
+button {
+  padding: 5px 10px;
+    background-color: $bgr-color;
+    color: $btn-text-color;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+      box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.controler{
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
 .stikers-wall {

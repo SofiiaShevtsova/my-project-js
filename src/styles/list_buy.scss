@@ -1,0 +1,98 @@
+$font-family-primery: "Pacifico", sans-serif;
+$btn-text-color: rgb(25, 68, 11);
+$text-color: rgb(25, 68, 11);
+$bgr-color: rgba(20, 255, 20, 0.7);
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../images/svitok.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.title {
+    color: $text-color;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.box-form {
+    margin: 0 auto;
+    padding: 100px 0;
+    min-height: 800px;
+    max-width: 500px;
+
+    font-family: $font-family-primery;
+}
+
+.form-input {
+    padding: 15px;
+    margin: 10px auto;
+
+    color: $text-color;
+    font-size: 24px;
+    font-weight: 500;
+
+    border-radius: 10px;
+    border-color: $text-color;
+}
+
+.form-input:focus {
+    outline: 2px $text-color;
+}
+
+::placeholder {
+    color: $text-color;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.buy-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buy-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: $text-color;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.clean-list {
+    padding: 10px;
+    margin: 10px auto;
+
+    background-color: $bgr-color;
+    color: $btn-text-color;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 0.5;
+    cursor: pointer;
+
+        box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.buy-btn {
+    padding: 5px 10px;
+    background-color: $bgr-color;
+    color: $btn-text-color;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+
+        box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.buy {
+    text-decoration: line-through 5px;
+}
