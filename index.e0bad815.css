@@ -1,2 +1,0 @@
-.hero--title{font-size:32px}.hero--text{text-align:start;font-size:18px}.wall{flex-wrap:wrap;gap:30px;display:flex}.wall--item{width:calc(50% - 30px);transition:transform .5s linear;position:relative}.wall--item:hover{transform:scale(1.25)}.wall--item img{margin:0 auto}.wall--title{position:absolute;top:30%;left:50%;transform:translate(-50%)}
-/*# sourceMappingURL=index.e0bad815.css.map */

@@ -1,1 +1,0 @@
-{"mappings":"AAIaA,SAASC,cAAc","sources":["src/js/index.js"],"sourcesContent":["import \"../../node_modules/modern-normalize\";\nimport \"../styles/style.scss\";\nimport \"../styles/hero.scss\";\n\nconst hero = document.querySelector(\".hero--section\");\n"],"names":["document","querySelector"],"version":3,"file":"index.cc7d3e0c.js.map"}
