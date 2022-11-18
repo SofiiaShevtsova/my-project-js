@@ -2,6 +2,8 @@ import "../../node_modules/modern-normalize"
 import "../styles/style.scss"
 import "../styles/list_buy.scss"
 import { Notify } from "notiflix";
+import { bgrImage} from "../js/bgr-image";
+
 
 const formForBuy = document.querySelector(".form");
 const inputForBuy = formForBuy.querySelector("input");
@@ -13,6 +15,9 @@ const MY_LIST = "my-list";
 const ARRAY_ITEM = "list-of-product";
 
 buyList.innerHTML = localStorage.getItem(MY_LIST);
+
+bgrImage.getImage()
+
 
 function greatListItem(item) {
   const listItem = `<li class="buy-item"><p>${item}</p><button type="button" class="buy-btn">Купили</button></li>`;

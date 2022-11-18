@@ -3,6 +3,8 @@ import "../styles/style.scss";
 import "../styles/stikers.scss";
 import { Notify } from "notiflix";
 import { Notes, boxForNotes, LIST_NOTES } from "./notice";
+import { bgrImage} from "../js/bgr-image";
+
 
 const btnCreate = document.querySelector(".js-create");
 const btnClean = document.querySelector(".js-clean");
@@ -17,6 +19,8 @@ function checkLocalStorage() {
   }
 }
 checkLocalStorage();
+
+bgrImage.getImage()
 
 function onBtnCreateClick(event) {
   backdrop.classList.remove("visually-hidden");

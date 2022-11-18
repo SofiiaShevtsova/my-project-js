@@ -1,6 +1,7 @@
 $font-family-primery: "Pacifico", sans-serif;
 
 body {
+  height: 100%;
   background-color: rgba(20, 255, 20, 0.7);
   font-family: $font-family-primery;
   font-size: 18px;
@@ -20,7 +21,7 @@ header {
 }
 
 .nav__link {
-  color: black;
+  color: bisque;
   transition: transform 500ms linear, color 500ms linear;
 }
 
@@ -30,8 +31,8 @@ header {
 }
 
 .logo {
-  color: black;
-  font-size: 30px;
+  color: bisque;
+    font-size: 30px;
   font-weight: 700;
   font-family: Cambria, serif;
   transition: transform 500ms linear, color 500ms linear;
