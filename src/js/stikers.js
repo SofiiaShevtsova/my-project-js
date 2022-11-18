@@ -3,7 +3,6 @@ import "../styles/style.scss";
 import "../styles/stikers.scss";
 import { Notify } from "notiflix";
 import { Notes, boxForNotes, LIST_NOTES } from "./notice";
-// const axios = require("axios").default;
 
 const btnCreate = document.querySelector(".js-create");
 const btnClean = document.querySelector(".js-clean");
@@ -18,21 +17,6 @@ function checkLocalStorage() {
   }
 }
 checkLocalStorage();
-
-// const options =
-//   "key=31187211-d453cf6c0705ee9af6400cbd4&min_width=1200&q=moon&image_type=photo&orientation=horizontal&safesearch=true&per_page=3&";
-// const baseUrl = "https://pixabay.com/api/";
-
-// getImage();
-// async function getImage() {
-//   const page = Math.floor(Math.random() * 20);
-
-//   try {
-//     const response = await axios.get(`${baseUrl}?${options}` + `page=${page}`);
-//     console.log(response.data.hits[1].largeImageURL);
-//     boxForNotes.parentNode.style.backgroundImage = `url(${response.data.hits[1].largeImageURL})`;
-//   } catch (error) {}
-// }
 
 function onBtnCreateClick(event) {
   backdrop.classList.remove("visually-hidden");

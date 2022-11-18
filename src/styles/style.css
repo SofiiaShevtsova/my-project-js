@@ -1,11 +1,9 @@
-$font-family-primery: "Pacifico", sans-serif;
-
 body {
   background-color: rgba(20, 255, 20, 0.7);
-  font-family: $font-family-primery;
+  font-family: "Pacifico", sans-serif;
   font-size: 18px;
 }
-// ------------------header----------------------------------------------
+
 header {
   padding: 20px 50px;
   display: flex;
@@ -48,6 +46,7 @@ section {
   margin: 0 auto;
   text-align: center;
 }
+
 footer {
   padding: 50px;
 }
@@ -60,7 +59,7 @@ li {
 a {
   display: block;
   text-decoration: none;
-  font-family: $font-family-primery;
+  font-family: "Pacifico", sans-serif;
   font-size: 18px;
 }
 
@@ -73,4 +72,4 @@ h2,
 p {
   margin: 0;
   padding: 0;
-}
+}/*# sourceMappingURL=style.css.map */

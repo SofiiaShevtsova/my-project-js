@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   padding: 50px;
-
   background-image: url("../images/svitok-hor.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -18,7 +17,6 @@
   padding: 70px;
   width: 600px;
   height: 500px;
-
   text-align: center;
 }
 
@@ -31,4 +29,4 @@
   margin-left: 50%;
   margin-bottom: 10%;
   font-size: 20px;
-}
+}/*# sourceMappingURL=phrase.css.map */
