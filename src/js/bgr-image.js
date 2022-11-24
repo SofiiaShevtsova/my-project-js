@@ -19,5 +19,8 @@ export const bgrImage = {
       body.style.backgroundSize = `cover`;
       body.style.backgroundRepeat = `no-repeat`;
     } catch (error) {}
+
   },
 };
+
+
